@@ -1,0 +1,35 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": ["react-app", "eslint:recommended", "plugin:react/recommended"],
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [],
+    "rules": {
+        "react-hooks/exhaustive-deps": "error",
+        "no-var": "error",
+        "brace-style": "warn",
+        "prefer-template": "warn",
+        "space-before-blocks": "warn",
+        "react/prop-types": 0
+    },
+    "overrides": [
+        {
+            "files": [
+                "**/*.test.js",
+                "**/*.test.jsx",
+                "**/*.test.tsx",
+                "**/*.spec.js",
+                "**/*.spec.jsx",
+                "**/*.spec.tsx"
+            ],
+            "env": {
+                "jest": true
+            }
+        }
+    ]
+}
