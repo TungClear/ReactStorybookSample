@@ -13,18 +13,18 @@ const Template = args => <MButton {...args} />;
 export const Primary = Template.bind({});
 Primary.args = {
   type: 'primary',
-  label: 'Primary Button',
+  children: 'Primary Button',
 };
 
 export const Icon = Template.bind({});
 Icon.args = {
   type: 'primary',
-  label: 'Search',
-  icon: <SearchOutlined />
+  children: 'Search',
+  icon: <SearchOutlined />,
 };
 
 export const IconTooltip = () => (
   <Tooltip title="search">
     <MButton type="primary" shape="circle" icon={<SearchOutlined />} />
   </Tooltip>
-)
+);
