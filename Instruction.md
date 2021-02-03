@@ -39,3 +39,8 @@
       };
       `
 8. Add less to storybook by import to preview.js: import 'antd/dist/antd.less'
+
+9. Config i18n
+    - yarn add i18next react-i18next i18next-http-backend
+    - create i18n.js
+    - import i18n.js to index.js
